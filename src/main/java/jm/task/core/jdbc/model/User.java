@@ -59,4 +59,11 @@ public class User {
     public void setAge(Byte age) {
         this.age = age;
     }
+
+    @Override
+    public String toString(){
+        return ("Пользователя номер ".concat(String.valueOf(this.id)).concat(" зовут ").
+                concat(this.name).concat(" ").concat(this.lastName).
+                concat(", его возраст: ").concat(String.valueOf(this.age)));
+    }
 }
