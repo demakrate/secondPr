@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Table
 public class User {
     @Id
@@ -61,7 +62,7 @@ public class User {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return ("Пользователя номер ".concat(String.valueOf(this.id)).concat(" зовут ").
                 concat(this.name).concat(" ").concat(this.lastName).
                 concat(", его возраст: ").concat(String.valueOf(this.age)));
